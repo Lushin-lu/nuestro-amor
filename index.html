@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css" />
+  <title>Nuestro Amor</title>
+  
+</head>
+<body>
+  <header>
+    <h1>Nuestro Amor</h1>
+    <p>Hecho con todo mi corazón para ti ❤❤❤</p>
+  </header>
+
+  <section class="galeria">
+    <h2>✨ Todo es hermoso a tu lado ✨</h2>
+    <div class="carrusel-galeria">
+      <div class="galeria-imagenes">
+        <img src="img/img1.jpeg" alt="Momentos contigo">
+        <img src="img/img5.jpeg" alt="Amor eterno">
+        <img src="img/img3.jpeg" alt="Ternura y alegría">
+        <!-- Puedes agregar más imágenes -->
+        <img src="img/img4.jpeg" alt="Repetida para bucle suave">
+        <img src="img/img5.jpeg" alt="Repetida para bucle suave">
+        <img src="img/img6.jpeg" alt="Repetida para bucle suave">
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="carta">
+    <h2>Mi Carta Para Ti</h2>
+    <p>En mis días quiero que estés conmigo.
+        Con cada rayo del sol, con cada soplo del viento, deseo que seas tú quien me acompañe.
+        
+        Quiero vivir esta vida a tu lado, descubrir lo hermoso del mundo contigo, reír contigo, soñar contigo…
+        Porque cuando estás aquí, todo cobra sentido.
+        
+        Te amo con cada pensamiento, con cada suspiro de mi alma.
+        Con cada palabra que digo, con cada gesto mío… te amo.
+        Con todo lo que soy, te amo… y te amaré.
+        
+        Eres una mujer de una inteligencia inmensa,
+        de un corazón fuerte, de un cariño sincero,
+        de una bondad infinita.
+        Mujer… eres una maravilla hecha persona.
+        
+        Cada una de tus acciones es arte para esta vida.
+        Y yo tengo el privilegio de admirarlo.
+        
+        Te amo por todo lo que eres.
+        Quiero que estés a mi lado hoy, mañana y siempre.
+        Quiero descubrir este mundo solo contigo.
+        Porque mi mayor deseo
+        es ser amado por ti.</p>
+  </section>
+
+  <section class="frases">
+    <h2>Cariño Mio</h2>
+    <p class="frase">Te pienso en cada instante del tiempo</p>
+    <p class="frase">Por toda la eternidad quiero que mis manos toquen tu suave piel</p>
+    <p class="frase">Amarte es mi forma favorita de vivir mis días</p>
+    <p class="frase">La distancia solo es espacio. Nuestro amor es tiempo eterno</p>
+    <p class="frase">Aunque estés lejos, eres mi lugar favorito. Eres la mujer que siempre elegiré</p>
+    <p class="frase">xtrañarte se ha vuelto parte de mi rutina, y amarte... es parte de mi vida y mi existencia</p>
+  </section>
+
+  <section class="timeline">
+    <h2>Momentos a tu lado</h2>
+    <div class="timeline-container">
+  
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>1 de enero de 2025</h3>
+          <p>El día que empezó todo. Nos entregamos en alma y mente.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>Primera vez en el cine juntos</h3>
+          <p>Momentos que se quedan en el alma para siempre.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>Nuestro Primer beso</h3>
+          <p>La sensación más hermosa del mundo.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>La primera vez que te dije te amo</h3>
+          <p>Algo salido del corazón.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>La primera salida juntos</h3>
+          <p>Un momento inolvidable entre risas y miradas.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>La vez que cociné para ti</h3>
+          <p>fue bonito y te haria todas las veces</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>La primera vez que compartimos alitas juntos jsjs</h3>
+          <p>delicioso y hermoso contigo</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>Grandes momentos maravillosos junto a ti y quiero vivir mas contigo</h3>
+          <p></p>
+        </div>
+      </div>
+
+    
+  
+    </div>
+  </section>
+  
+  
+
+  <section class="jueguito-romantico">
+    <h2>💖 ¡Atrapa al Snoopy! 💖</h2>
+    <div id="area-juego">
+      <img src="img/img2.png" id="corazon" alt="corazón" />
+    </div>
+    <p id="frase-amor"></p>
+  </section>
+  <script>
+    const corazon = document.getElementById('corazon');
+    const frases = [
+      "Te amo con todo mi ser 💖",
+      "Eres mi alegría cada día 🌞",
+      "Contigo soy la mejor versión de mí 💫",
+      "Eres mi lugar favorito en el mundo 🌍",
+      "Tú y yo por siempre ❤️"
+    ];
+    const fraseAmor = document.getElementById('frase-amor');
+    const areaJuego = document.getElementById('area-juego');
+  
+    function moverCorazon() {
+      const maxX = areaJuego.offsetWidth - corazon.offsetWidth;
+      const maxY = areaJuego.offsetHeight - corazon.offsetHeight;
+      const x = Math.random() * maxX;
+      const y = Math.random() * maxY;
+      corazon.style.left = `${x}px`;
+      corazon.style.top = `${y}px`;
+    }
+  
+    corazon.addEventListener('click', () => {
+      const frase = frases[Math.floor(Math.random() * frases.length)];
+      fraseAmor.textContent = frase;
+      moverCorazon();
+    });
+  
+    // Posición inicial
+    moverCorazon();
+  </script>
+  
+  
+  
+
+  <section class="beso">
+    <h2>Te mando un beso virtual 😘</h2>
+    <button onclick="enviarBeso()">Enviar Besito</button>
+    <p id="mensajeBeso" style="margin-top:1rem;color:#ff4f85;font-weight:bold;"></p>
+  </section>
+
+  
+
+  <script>
+    function enviarBeso() {
+      const mensaje = document.getElementById('mensajeBeso');
+      mensaje.textContent = "Muack! 💋 Te mando un beso hasta donde estés, mi amor.";
+      mensaje.style.opacity = 0;
+      setTimeout(() => {
+        mensaje.style.transition = 'opacity 0.5s';
+        mensaje.style.opacity = 1;
+      }, 100);
+    }
+  </script>
+</body>
+</html>
+

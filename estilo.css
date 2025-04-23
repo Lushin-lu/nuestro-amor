@@ -1,0 +1,309 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom, #ffd9ec, #d0e9ff);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background-color: #ff7aa2;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: bounceIn 1s ease;
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    .carta, .frases, .timeline, .juego, .beso, .musica {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .carta:hover, .frases:hover, .timeline:hover, .juego:hover, .beso:hover, .musica:hover {
+      transform: scale(1.01);
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+    }
+
+    h2 {
+      color: #ff4f85;
+    }
+
+    .frase {
+      font-style: italic;
+      margin-bottom: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .frase:hover {
+      transform: scale(1.02);
+      color: #ff4f85;
+    }
+
+    .beso button {
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+      background-color: #ff4f85;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.3s;
+    }
+
+    .beso button:hover {
+      transform: scale(1.05);
+      background-color: #e63e72;
+    }
+
+    .juego select {
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-top: 1rem;
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    audio {
+      display: block;
+      margin: 1rem auto;
+    }
+
+
+    .timeline {
+      margin: 60px auto;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .timeline h2 {
+      font-size: 28px;
+      color: #c94f7c;
+      margin-bottom: 40px;
+    }
+    
+    .timeline-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .timeline-item {
+      position: relative;
+      width: 45%;
+      margin-bottom: 60px;
+      background: #fff0f6;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .timeline-item:hover {
+      transform: scale(1.03);
+    }
+    
+    .timeline-dot {
+      width: 20px;
+      height: 20px;
+      background-color: #c94f7c;
+      border-radius: 50%;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 4px #ffe5ec;
+    }
+    
+    .timeline-content h3 {
+      color: #b84d7b;
+      margin-bottom: 10px;
+    }
+    
+    .timeline-content img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+
+
+    .galeria {
+      margin: 60px auto;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .galeria h2 {
+      font-size: 28px;
+      color: #c94f7c;
+      margin-bottom: 30px;
+      animation: latido 1.8s infinite;
+    }
+    
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    
+    .carrusel-galeria {
+      overflow: hidden;
+      width: 90%;
+      max-width: 700px;
+      margin: 0 auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .galeria-imagenes {
+      display: flex;
+      gap: 10px; /* Espacio entre imágenes */
+      width: max-content;
+      animation: girarGaleriaInfinita 60s linear infinite;
+    }
+    
+    .galeria-imagenes img {
+      width: 200px; /* Tamaño mediano */
+      height: 200px;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    
+    
+    /* Animación infinita y suave */
+    @keyframes girarGaleriaInfinita {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    
+
+
+
+
+
+
+
+
+
+    .jueguito-romantico {
+      text-align: center;
+      padding: 30px;
+    }
+    
+    #area-juego {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: #ffe0ec;
+      margin: 20px auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    
+    #corazon {
+      position: absolute;
+      width: 60px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    
+    #corazon:hover {
+      transform: scale(1.1);
+    }
+    
+    #frase-amor {
+      font-size: 20px;
+      color: #c94f7c;
+      margin-top: 20px;
+      min-height: 40px;
+      font-weight: bold;
+    }
+    
+
+
+
+
+
+/* Estilos responsive generales */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .timeline-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-item {
+    width: 100% !important;
+    margin: 20px 0;
+  }
+
+  .galeria-imagenes {
+    flex-wrap: nowrap;
+  }
+
+  .galeria-imagenes img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .juego select {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .carta, .modal, .contenedor-corazones {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  h1, h2, h3 {
+    font-size: 22px;
+  }
+
+  .modal img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .timeline-dot {
+    display: none;
+  }
+}
+  
